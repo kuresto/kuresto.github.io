@@ -13,7 +13,7 @@
         <h3>Eu sou um <span>desenvolvedor full-stack</span> estacionado em Ribeirão Preto/SP.
           Procuro <span>desenvolver para humanos</span> através do desapego a crenças engessadas, colocando
           <span>conceitos acima da ferramentas</span>. <br>
-          Ficou curioso? <a class="smoothscroll" href="#about">Me conheça melhor logo abaixo!</a>
+          Ficou curioso? <a class="smoothscroll" href="#sobre-mim">Me conheça melhor logo abaixo!</a>
         </h3>
         <hr/>
         <ul class="social">
@@ -32,7 +32,7 @@
     </div>
 
     <p class="scrolldown">
-      <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      <a class="smoothscroll" href="#sobre-mim"><i class="icon-down-circle"></i></a>
     </p>
 
   </header>

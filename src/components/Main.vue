@@ -2,16 +2,21 @@
   <main>
 
     <vue-header></vue-header>
+    <about-me></about-me>
 
   </main>
 </template>
 
 <script>
 import Header from './Template/Header'
+import AboutMe from './Template/AboutMe'
 
 export default {
   name: 'Main',
-  components: { 'vue-header': Header },
+  components: {
+    'vue-header': Header,
+    AboutMe
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
