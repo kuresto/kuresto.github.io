@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <main>
 
     <vue-header></vue-header>
 
-  </div>
+  </main>
 </template>
 
 <script>
