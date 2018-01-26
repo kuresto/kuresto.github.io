@@ -20,6 +20,12 @@ body {
   background: #0f0f0f;
 }
 
+$hacker-green: #20c20e;
+$grey-text: #a8a8a8;
+$white-text: #fff;
+$background: #161415;
+$opaque: #282828;
+
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
@@ -29,7 +35,7 @@ header {
   height: 800px;
   min-height: 500px;
   width: 100%;
-  background: #161415 no-repeat top center;
+  background: $background url(assets/img/header-background.jpg) no-repeat top center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   text-align: center;
@@ -59,7 +65,7 @@ header .banner-text {
 
 header .banner-text h1 {
   font: bold 90px/1.1em 'Fira Sans', sans-serif;
-  color: #fff;
+  color: $white-text;
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
   text-shadow: 0 1px 3px rgba(0, 0, 0, .8);
@@ -71,15 +77,21 @@ header .banner-text h1 {
 
 header .banner-text h3 {
   font: 18px/1.9em 'Montserrat', sans-serif;
-  color: #A8A8A8;
+  color: $white-text;
   margin: 0 auto;
   width: 70%;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
 }
 
 header .banner-text h3 span,
 header .banner-text h3 a {
-  color: #fff;
+  color: $hacker-green;
+}
+
+header .banner-text h3 a {
+  &:hover {
+    color: lighten($hacker-green, 25%);
+  }
 }
 
 header .banner-text hr {
@@ -104,7 +116,7 @@ header .social li {
 }
 
 header .social li a {
-  color: #fff;
+  color: $white-text;
 }
 
 header .social li a:hover {
@@ -117,13 +129,12 @@ header .scrolldown a {
   bottom: 30px;
   left: 50%;
   margin-left: -29px;
-  color: #fff;
   display: block;
   height: 42px;
   width: 42px;
   font-size: 42px;
   line-height: 42px;
-  color: #fff;
+  color: $white-text;
   border-radius: 100%;
 
   -webkit-transition: all .3s ease-in-out;
@@ -159,7 +170,7 @@ header .scrolldown a:hover {
 }
 
 .opaque {
-  background-color: #333;
+  background-color: $opaque;
 }
 
 /* hide toggle button */
@@ -192,7 +203,7 @@ ul#nav li a {
   line-height: 32px;
   text-decoration: none;
   text-align: left;
-  color: #fff;
+  color: $white-text;
 
   -webkit-transition: color .2s ease-in-out;
   -moz-transition: color .2s ease-in-out;
@@ -206,7 +217,7 @@ ul#nav li a:active {
 }
 
 ul#nav li.current a {
-  color: #F06000;
+  color: $hacker-green;
 }
 
 /* ------------------------------------------------------------------ */
@@ -221,7 +232,7 @@ ul#nav li.current a {
 }
 
 #about a, #about a:visited {
-  color: #fff;
+  color: $white-text;
 }
 
 #about a:hover, #about a:focus {
@@ -230,7 +241,7 @@ ul#nav li.current a {
 
 #about h2 {
   font: 22px/30px 'Fira Sans', sans-serif;
-  color: #fff;
+  color: $white-text;
   margin-bottom: 12px;
 }
 
@@ -265,7 +276,7 @@ ul#nav li.current a {
 }
 
 #about .download .button:hover {
-  background: #fff;
+  background: $white-text;
   color: #2B2B2B;
 }
 
@@ -279,7 +290,7 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #resume {
-  background: #fff;
+  background: $white-text;
   padding-top: 90px;
   padding-bottom: 72px;
   overflow: hidden;
@@ -557,7 +568,7 @@ ul#nav li.current a {
 }
 
 .portfolio-item .item-wrap {
-  background: #fff;
+  background: $white-text;
   overflow: hidden;
   position: relative;
 
@@ -595,7 +606,7 @@ ul#nav li.current a {
 
 .portfolio-item .item-wrap .link-icon {
   display: block;
-  color: #fff;
+  color: $white-text;
   height: 30px;
   width: 30px;
   font-size: 18px;
@@ -628,7 +639,7 @@ ul#nav li.current a {
 
 .portfolio-item .portfolio-item-meta h5 {
   font: 14px/21px 'Fira Sans', sans-serif;
-  color: #fff;
+  color: $white-text;
 }
 
 .portfolio-item .portfolio-item-meta p {
@@ -653,7 +664,7 @@ ul#nav li.current a {
 /* popup modal */
 .popup-modal {
   max-width: 550px;
-  background: #fff;
+  background: $white-text;
   position: relative;
   margin: 0 auto;
 }
@@ -694,7 +705,7 @@ ul#nav li.current a {
 }
 
 .popup-modal .link-box a {
-  color: #fff;
+  color: $white-text;
   font: 11px/21px 'Fira Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -746,7 +757,7 @@ ul#nav li.current a {
   font: 18px/24px 'Fira Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #fff;
+  color: $white-text;
 }
 
 #call-to-action h1 span {
@@ -761,7 +772,7 @@ ul#nav li.current a {
   line-height: 72px;
   text-align: left;
   float: left;
-  color: #fff;
+  color: $white-text;
 }
 
 #call-to-action .action {
@@ -785,7 +796,7 @@ ul#nav li.current a {
 
 /*#
 call-to-action .button {
-	color:#fff;
+	color:$white-text;
    background: #0D0D0D;
 }
 */
@@ -825,7 +836,7 @@ call-to-action .button {
   font: 18px/24px 'Fira Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #fff;
+  color: $white-text;
 }
 
 #testimonials h1 span {
@@ -844,7 +855,7 @@ call-to-action .button {
   line-height: 72px;
   text-align: left;
   float: left;
-  color: #fff;
+  color: $white-text;
 }
 
 /*	Blockquotes */
@@ -864,7 +875,7 @@ call-to-action .button {
   padding: 0;
   font-size: 24px;
   line-height: 48px;
-  color: #fff
+  color: $white-text
 }
 
 #testimonials blockquote cite {
@@ -872,7 +883,7 @@ call-to-action .button {
   font-size: 12px;
   font-style: normal;
   line-height: 18px;
-  color: #fff;
+  color: $white-text;
 }
 
 #testimonials blockquote cite:before {
@@ -999,7 +1010,7 @@ call-to-action .button {
 }
 
 .flex-control-paging li a.flex-active {
-  background: #fff;
+  background: $white-text;
   background: rgba(255, 255, 255, .9);
   cursor: default;
 }
@@ -1024,7 +1035,7 @@ call-to-action .button {
 }
 
 #contact a:hover, #contact a:focus {
-  color: #fff;
+  color: $white-text;
 }
 
 #contact h1 {
@@ -1097,14 +1108,14 @@ call-to-action .button {
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
-  color: #fff;
+  color: $white-text;
   background-color: #11ABB0;
 }
 
 #contact button.submit {
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #fff;
+  color: $white-text;
   background: #0D0D0D;
   border: none;
   cursor: pointer;
@@ -1116,7 +1127,7 @@ call-to-action .button {
 
 #contact button.submit:hover {
   color: #0D0D0D;
-  background: #fff;
+  background: $white-text;
 }
 
 #contact span.required {
@@ -1192,7 +1203,7 @@ footer a, footer a:visited {
 }
 
 footer a:hover, footer a:focus {
-  color: #fff;
+  color: $white-text;
 }
 
 /* copyright */
@@ -1264,7 +1275,7 @@ footer .social-links li:first-child {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 
-  color: #fff;
+  color: $white-text;
   font-size: 21px;
   line-height: 60px;
   border-radius: 100%;

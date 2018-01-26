@@ -11,17 +11,22 @@
           Nilton Teixeira.
         </h1>
         <h3>Eu sou um <span>desenvolvedor full-stack</span> estacionado em Ribeirão Preto/SP.
-          Acredito em <span>desenvolver para humanos</span>, deixando de lado crenças engessadas e colocando
-          <span>conceito sobre ferramenta</span>. <br>
+          Procuro <span>desenvolver para humanos</span> através do desapego a crenças engessadas, colocando
+          <span>conceitos acima da ferramentas</span>. <br>
           Ficou curioso? <a class="smoothscroll" href="#about">Me conheça melhor logo abaixo!</a>
         </h3>
         <hr/>
         <ul class="social">
-          <li><a href="#"><i class="fa fa-github"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+          <li><a href="https://github.com/kuresto" title="Meu GitHub" target="_blank"><i class="fa fa-github"></i></a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/nilton-teixeira-22069a106" target="_blank" title="Meu LinkedIn">
+            <i class="fa fa-linkedin"></i>
+          </a></li>
+          <li><a href="https://twitter.com/whoiskuresto" target="_blank" title="Meu Twitter"><i
+            class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com/kuresto"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="mailto:niltonfrederico@gmail.com" title="Me envie um e-mail!" target="_blank"><i
+            class="fa fa-envelope"></i></a></li>
         </ul>
       </div>
     </div>
@@ -34,14 +39,26 @@
 </template>
 
 <script>
-import Menu from './Menu'
+import TopMenu from './TopMenu'
 
 export default {
   name: 'hero',
   components: {
-    'top-menu': Menu
+    TopMenu
+  },
+  mounted () {
+    // make sure that window height is being correctly fetched
+    let w = window
+    let d = document
+    let e = d.documentElement
+    let g = d.getElementsByTagName('body')[0]
+    let y = w.innerHeight || e.clientHeight || g.clientHeight
+
+    const header = document.getElementsByTagName('header')[0]
+    header.style.height = y + 'px'
   }
 }
+
 </script>
 
 <style scoped>
