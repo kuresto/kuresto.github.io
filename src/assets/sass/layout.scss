@@ -224,63 +224,65 @@ ul#nav li.current a {
 /* c. About Section
 /* ------------------------------------------------------------------ */
 
-#about {
+#sobre-mim {
   background: #2B2B2B;
   padding-top: 96px;
   padding-bottom: 66px;
   overflow: hidden;
 }
 
-#about a, #about a:visited {
+#sobre-mim a, #sobre-mim a:visited {
   color: $white-text;
 }
 
-#about a:hover, #about a:focus {
+#sobre-mim a:hover, #sobre-mim a:focus {
   color: #11ABB0;
 }
 
-#about h2 {
+#sobre-mim h2 {
   font: 22px/30px 'Fira Sans', sans-serif;
   color: $white-text;
   margin-bottom: 12px;
 }
 
-#about p {
+#sobre-mim p {
   line-height: 30px;
   color: #7A7A7A;
 }
 
-#about .profile-pic {
+#sobre-mim .profile-pic {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: 100%;
 }
 
-#about .contact-details {
+#sobre-mim .contact-details {
   width: 41.66667%;
 }
 
-#about .download {
+#sobre-mim .download {
   width: 58.33333%;
   padding-top: 6px;
 }
 
-#about .main-col {
+#sobre-mim .main-col {
   padding-right: 5%;
 }
 
-#about .download .button {
+#sobre-mim .download .button {
   margin-top: 6px;
   background: #444;
 }
 
-#about .download .button:hover {
+#sobre-mim .download .button:hover {
   background: $white-text;
   color: #2B2B2B;
 }
 
-#about .download .button i {
+#sobre-mim .download .button i {
   margin-right: 15px;
   font-size: 20px;
 }
