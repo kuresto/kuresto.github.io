@@ -47,15 +47,22 @@ export default {
     TopMenu
   },
   mounted () {
-    // make sure that window height is being correctly fetched
-    let w = window
-    let d = document
-    let e = d.documentElement
-    let g = d.getElementsByTagName('body')[0]
-    let y = w.innerHeight || e.clientHeight || g.clientHeight
-
     const header = document.getElementsByTagName('header')[0]
-    header.style.height = y + 'px'
+    header.style.minHeight = getWindowHeight() + 'px'
+
+    window.addEventListener('resize', function () {
+      header.style.minHeight = getWindowHeight() + 'px'
+    }, false)
+
+    function getWindowHeight () {
+      // make sure that window height is being correctly fetched
+      let w = window
+      let d = document
+      let e = d.documentElement
+      let g = d.getElementsByTagName('body')[0]
+
+      return w.innerHeight || e.clientHeight || g.clientHeight
+    }
   }
 }
 
