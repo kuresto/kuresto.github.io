@@ -118,27 +118,23 @@
 
       <div class="nine columns main-col">
 
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam,
-          eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-          ipsam
-          voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-          ratione
-          voluptatem sequi nesciunt.
-        </p>
+        <div class="row item" v-bind="projects" v-for="projects in projects">
 
-        <div class="bars">
+          <div class="twelve columns">
 
-          <ul class="skills">
-            <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-            <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
-            <li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-            <li><span class="bar-expand css"></span><em>CSS</em></li>
-            <li><span class="bar-expand html5"></span><em>HTML5</em></li>
-            <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
-          </ul>
+            <h3>{{ project }}</h3>
+            <p class="info">UX Designer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
 
-        </div><!-- end skill-bars -->
+            <p>
+              This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+              Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+              nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+              ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
+            </p>
+
+          </div>
+
+        </div> <!-- item end -->
 
       </div> <!-- main-col end -->
 
@@ -149,8 +145,16 @@
 </template>
 
 <script>
+import YAML from 'yamljs'
+
 export default {
-  name: 'projects'
+  name: 'projects',
+  computed: {
+    projects () {
+      return YAML.load('/static/seed/historico.yml')
+    }
+  }
+
 }
 </script>
 
