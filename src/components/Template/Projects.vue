@@ -110,7 +110,7 @@
 
     <!-- Skills
     ----------------------------------------------- -->
-    <div class="row skill">
+    <div class="row skill" v-if="projects.length !== 0">
 
       <div class="three columns header-col">
         <h1><span>Histórico</span></h1>
@@ -118,18 +118,15 @@
 
       <div class="nine columns main-col">
 
-        <div class="row item" v-bind="projects" v-for="projects in projects">
+        <div class="row item" v-bind="projects" v-for="project in projects">
 
           <div class="twelve columns">
 
-            <h3>{{ project }}</h3>
-            <p class="info">UX Designer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
+            <h3>{{ project.nome }}</h3>
+            <p class="info">{{ project.funcao }} <span>&bull;</span> <em class="date">{{ project.ano }}</em></p>
 
             <p>
-              This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-              Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-              nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-              ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
+              {{ project.descricao }}
             </p>
 
           </div>
