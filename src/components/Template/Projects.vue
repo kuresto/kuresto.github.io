@@ -6,7 +6,7 @@
 
     <!-- Education
     ----------------------------------------------- -->
-    <div class="row education" v-if="filosofia.conteudo.length !== undefined">
+    <div class="row education" v-if="philosofy.conteudo.length !== undefined">
 
       <div class="three columns header-col">
         <h1><span>Filosofia</span></h1>
@@ -18,11 +18,11 @@
 
           <div class="twelve columns">
 
-            <h3>{{ filosofia.quote }}</h3>
-            <p class="info">{{ filosofia.origin }}</p>
+            <h3>{{ philosofy.quote }}</h3>
+            <p class="info">{{ philosofy.origin }}</p>
 
             <p>
-              {{ filosofia.conteudo }}
+              {{ philosofy.conteudo }}
             </p>
 
           </div>
@@ -35,7 +35,7 @@
 
     <!-- Work
     ----------------------------------------------- -->
-    <div class="row work">
+    <div class="row work" v-if="featured.descricao !== undefined">
 
       <div class="three columns header-col">
         <h1><span>Projeto em destaque</span></h1>
@@ -47,34 +47,11 @@
 
           <div class="twelve columns">
 
-            <h3>Awesome Design Studio</h3>
-            <p class="info">Senior UX Designer <span>&bull;</span> <em class="date">March 2010 - Present</em></p>
+            <h3>{{ featured.nome }}</h3>
+            <p class="info">{{ featured.funcao }} <span>&bull;</span> <em class="date">{{ featured.ano }}</em></p>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-              massa.
-              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-              ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-              Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis
-              pretium.
-            </p>
-
-          </div>
-
-        </div> <!-- item end -->
-
-        <div class="row item">
-
-          <div class="twelve columns">
-
-            <h3>Super Cool Studio</h3>
-            <p class="info">UX Designer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
-
-            <p>
-              This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-              Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-              nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-              ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
+              {{ featured.descricao }}
             </p>
 
           </div>
@@ -124,10 +101,14 @@ import YAML from 'yamljs'
 export default {
   name: 'projects',
   computed: {
+    featured () {
+      console.log(YAML.load('/static/seed/projetodestaque.yml'))
+      return YAML.load('/static/seed/projetodestaque.yml')
+    },
     projects () {
       return YAML.load('/static/seed/historico.yml')
     },
-    filosofia () {
+    philosofy () {
       return YAML.load('/static/seed/filosofia.yml')
     }
   }
