@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'curriculum'
+  name: 'TheFooter'
 }
 </script>
 
