@@ -1,7 +1,7 @@
 <template>
   <!-- Portfolio Section
     ================================================== -->
-  <section id="portfolio">
+  <section id="portfolio" v-if="skills !== undefined">
 
     <div class="row">
 
@@ -12,15 +12,20 @@
         <!-- portfolio-wrapper -->
         <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
 
-          <div class="columns portfolio-item">
+          <div class="columns portfolio-item" v-for="skill in skills">
             <div class="item-wrap">
 
-              <a href="#modal-01" title="">
-                <img alt="" src="images/portfolio/coffee.jpg">
+              <a href="#" :title="skill.titulo">
+                <img :alt="skill.alt" :src="skill.imagem">
                 <div class="overlay">
                   <div class="portfolio-item-meta">
-                    <h5>Coffee</h5>
-                    <p>Illustrration</p>
+                    <h5>{{ skill.titulo }}</h5>
+                    <p>
+                      <span v-for="n in skill.rank">
+                        <em class="fa fa-star" :title="n"></em>
+                      </span>
+                    </p>
+                    <p>{{ skill.descricao_curta }}</p>
                   </div>
                 </div>
                 <div class="link-icon"><i class="icon-plus"></i></div>
@@ -39,8 +44,15 @@
 </template>
 
 <script>
+import YAML from 'yamljs'
+
 export default {
-  name: 'skills'
+  name: 'skills',
+  computed: {
+    skills () {
+      return YAML.load('/static/seed/skills.yml')
+    }
+  }
 }
 </script>
 
