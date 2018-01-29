@@ -21,16 +21,21 @@ export default {
   name: 'top-menu',
   mounted: function () {
     // smoothscrooling
-    let smoothscroll = document.getElementsByClassName('smoothscrool')
+    let smoothscroll = document.getElementsByClassName('smoothscroll')
 
-    smoothscroll.addEventListener('click', function (event) {
-      event.preventDefault()
+    if (smoothscroll.length > 0) {
+      for (let i = 0; i < smoothscroll.length; i++) {
+        let elem = smoothscroll[i]
 
-      let target = this.hash
+        elem.addEventListener('click', function (event) {
+          event.preventDefault()
 
-      console.log(target)
-    }, false)
-
+          document.getElementById(this.hash.replace('#', '')).scrollIntoView({
+            behavior: 'smooth'
+          })
+        }, false)
+      }
+    }
     /* $('.smoothscroll').on('click', function (e) {
       e.preventDefault()
 
