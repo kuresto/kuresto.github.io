@@ -18,7 +18,35 @@
 
 <script>
 export default {
-  name: 'top-menu'
+  name: 'top-menu',
+  mounted: function () {
+    // smoothscrooling
+    let smoothscroll = document.getElementsByClassName('smoothscrool')
+
+    smoothscroll.addEventListener('click', function (event) {
+      event.preventDefault()
+
+      let target = this.hash
+
+      console.log(target)
+    }, false)
+
+    /* $('.smoothscroll').on('click', function (e) {
+      e.preventDefault()
+
+      var target = this.hash,
+        $target = $(target)
+
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 800, 'swing', function () {
+        window.location.hash = target
+      })
+    }) */
+    // fade menu
+
+    // menu highlight
+  }
 }
 </script>
 
