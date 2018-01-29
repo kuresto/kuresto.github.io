@@ -5,12 +5,10 @@
     <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
     <ul id="nav" class="nav">
-      <li class="current"><a class="smoothscroll" href="#inicio">Inicio</a></li>
+      <li class="current"><a class="smoothscroll" href="#home">Contate-me</a></li>
       <li><a class="smoothscroll" href="#sobre-mim">Sobre mim</a></li>
-      <li><a class="smoothscroll" href="#curriculo">Currículo</a></li>
       <li><a class="smoothscroll" href="#projetos">Projetos</a></li>
-      <li><a class="smoothscroll" href="#depoimentos">Depoimentos</a></li>
-      <li><a class="smoothscroll" href="#contate-me">Contate-me</a></li>
+      <li><a class="smoothscroll" href="#skills">Habilidades</a></li>
     </ul> <!-- end #nav -->
 
   </nav> <!-- end #nav-wrap -->
@@ -45,25 +43,21 @@ export default {
       y = document.documentElement.scrollTop
       nav = document.getElementById('nav-wrap')
 
-      if ((y > h * 0.90) && (y < h) && (window.outerWidth > 768)) {
-        nav.className += ' fadeOut animated'
-        nav.classList.remove('fadeIn')
-        nav.classList.remove('animated')
+      if ((y > h * 1) && (y < h) && (window.outerWidth > 768)) {
+
       } else {
-        if (y < h * 0.90) {
+        if (y < h * 1) {
           nav.classList.remove('opaque')
-          nav.classList.remove('fadeOut')
-          nav.classList.remove('animated')
-          nav.className += ' fadeIn animated'
         } else {
           nav.className += ' opaque'
-          nav.className += ' fadeIn animated'
-          nav.classList.remove('fadeOut')
-          nav.classList.remove('animated')
         }
       }
     }, false)
+
     // menu highlight
+    let sections = {
+
+    }
   }
 }
 </script>
