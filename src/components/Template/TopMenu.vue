@@ -55,8 +55,56 @@ export default {
     }, false)
 
     // menu highlight
-    let sections = {
+    window.addEventListener('scroll', function () {
+      let sections = {
+        contato: {
+          id: '#home',
+          top: getY('#home').top,
+          bottom: getY('#home').bottom
+        },
+        sobre: {
+          id: '#sobre-mim',
+          top: getY('#sobre-mim').top,
+          bottom: getY('#sobre-mim').bottom
+        },
+        projetos: {
+          id: '#projetos',
+          top: getY('#projetos').top,
+          bottom: getY('#projetos').bottom
+        },
+        habilidades: {
+          id: '#skills',
+          top: getY('#skills').top,
+          bottom: getY('#skills').bottom
+        }
+      }
 
+      let id = function () {
+        let valids = []
+        for (let section in sections) {
+          if (sections[section].top >= 0) {
+            valids.push(sections[section].id)
+          }
+        }
+
+        return valids[0]
+      }
+
+      let elem = document.querySelector('a[href="' + id() + '"]')
+      let elems = document.querySelector('nav li.current')
+
+      elems.classList.remove('current')
+      elem.parentElement.className += ' current'
+    }, false)
+
+    function getY (query) {
+      let elem = document.querySelector(query)
+      let rect = elem.getBoundingClientRect()
+
+      return {
+        top: rect.top,
+        bottom: rect.bottom
+      }
     }
   }
 }
