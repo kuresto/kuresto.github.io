@@ -32,7 +32,7 @@
     </div>
 
     <p class="scrolldown">
-      <a class="smoothscroll" href="#sobre-mim"><i class="icon-down-circle"></i></a>
+      <a class="smoothscroll" href="#sobre-mim"><i class="fa fa-chevron-down"></i></a>
     </p>
 
   </header>

@@ -4,6 +4,7 @@
     <vue-header></vue-header>
     <about-me></about-me>
     <projects></projects>
+    <the-footer></the-footer>
 
   </main>
 </template>
@@ -12,17 +13,19 @@
 import Header from './Template/Header'
 import AboutMe from './Template/AboutMe'
 import Projects from './Template/Projects'
+import TheFooter from './Template/TheFooter'
 
 export default {
   name: 'Main',
   components: {
     'vue-header': Header,
     AboutMe,
-    Projects
+    Projects,
+    TheFooter
   },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+
     }
   }
 }
