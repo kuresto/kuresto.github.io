@@ -4,6 +4,7 @@
     <vue-header></vue-header>
     <about-me></about-me>
     <projects></projects>
+    <skills></skills>
     <the-footer></the-footer>
 
   </main>
@@ -13,6 +14,7 @@
 import Header from './Template/Header'
 import AboutMe from './Template/AboutMe'
 import Projects from './Template/Projects'
+import Skills from './Template/Skills'
 import TheFooter from './Template/TheFooter'
 
 export default {
@@ -21,6 +23,7 @@ export default {
     'vue-header': Header,
     AboutMe,
     Projects,
+    Skills,
     TheFooter
   },
   data () {
