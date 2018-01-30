@@ -100,6 +100,8 @@
               </li>
             </ul>
 
+            <p v-if="project.jobs !== undefined">Entre outros.</p>
+
           </div>
 
         </div> <!-- item end -->
