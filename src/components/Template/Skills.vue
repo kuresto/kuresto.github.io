@@ -15,7 +15,7 @@
           <div class="columns portfolio-item" v-for="skill in skills">
             <div class="item-wrap">
 
-              <a href="#" :title="skill.titulo">
+              <a class="askill" :title="skill.titulo">
                 <img :alt="skill.alt" :src="skill.imagem">
                 <div class="overlay">
                   <div class="portfolio-item-meta">
@@ -52,6 +52,8 @@ export default {
     skills () {
       return YAML.load('/static/seed/skills.yml')
     }
+  },
+  mounted: function () {
   }
 }
 </script>
