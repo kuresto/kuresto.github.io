@@ -1,7 +1,7 @@
 <template>
   <!-- Portfolio Section
     ================================================== -->
-  <section id="portfolio" v-if="skills !== undefined">
+  <section id="skills" v-if="skills !== undefined">
 
     <div class="row">
 

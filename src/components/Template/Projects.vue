@@ -2,7 +2,7 @@
 
   <!-- Resume Section
   ================================================== -->
-  <section id="resume">
+  <section id="projetos">
 
     <!-- Education
     ----------------------------------------------- -->
@@ -102,7 +102,6 @@ export default {
   name: 'projects',
   computed: {
     featured () {
-      console.log(YAML.load('/static/seed/projetodestaque.yml'))
       return YAML.load('/static/seed/projetodestaque.yml')
     },
     projects () {

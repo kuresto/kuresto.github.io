@@ -291,41 +291,41 @@ ul#nav li.current a {
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
 
-#resume {
+#projetos {
   background: $white-text;
   padding-top: 90px;
   padding-bottom: 72px;
   overflow: hidden;
 }
 
-#resume a, #resume a:visited {
+#projetos a, #projetos a:visited {
   color: #11ABB0;
 }
 
-#resume a:hover, #resume a:focus {
+#projetos a:hover, #projetos a:focus {
   color: #313131;
 }
 
-#resume h1 {
+#projetos h1 {
   font: 18px/24px 'Fira Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-#resume h1 span {
+#projetos h1 span {
   border-bottom: 3px solid #11ABB0;
   padding-bottom: 6px;
 }
 
-#resume h3 {
+#projetos h3 {
   font: 25px/30px 'Fira Sans', sans-serif;
 }
 
-#resume .header-col {
+#projetos .header-col {
   padding-top: 9px;
 }
 
-#resume .main-col {
+#projetos .main-col {
   padding-right: 10%;
 }
 
@@ -335,19 +335,19 @@ ul#nav li.current a {
   border-bottom: 1px solid #E8E8E8;
 }
 
-#resume .info {
+#projetos .info {
   font: 16px/24px 'Montserrat', sans-serif;
   color: #6E7881;
   margin-bottom: 18px;
   margin-top: 9px;
 }
 
-#resume .info span {
+#projetos .info span {
   margin-right: 5px;
   margin-left: 5px;
 }
 
-#resume .date {
+#projetos .date {
   font: 15px/24px 'Fira Code', sans-serif;
   margin-top: 6px;
 }
@@ -548,13 +548,13 @@ ul#nav li.current a {
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
 
-#portfolio {
+#skills {
   background: #ebeeee;
   padding-top: 90px;
   padding-bottom: 60px;
 }
 
-#portfolio h1 {
+#skills h1 {
   font: 15px/24px 'Fira Code', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -565,7 +565,7 @@ ul#nav li.current a {
 }
 
 /* Portfolio Content */
-#portfolio-wrapper .columns {
+#skills-wrapper .columns {
   margin-bottom: 36px;
 }
 
