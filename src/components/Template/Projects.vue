@@ -19,11 +19,11 @@
           <div class="twelve columns">
 
             <h3>{{ philosofy.quote }}</h3>
-            <p class="info">{{ philosofy.origin }}</p>
-
-            <p>
-              {{ philosofy.conteudo }}
+            <p class="info">
+              <small>{{ philosofy.origin }}</small>
             </p>
+
+            <p v-html="philosofy.conteudo"></p>
 
           </div>
 
@@ -47,12 +47,17 @@
 
           <div class="twelve columns">
 
-            <h3>{{ featured.nome }}</h3>
+            <h3>
+              {{ featured.nome }}
+              <small>
+                <a :href="featured.url" target="_blank" :title="featured.nome">
+                  <em class="fa fa-fw fa-external-link"></em>
+                </a>
+              </small>
+            </h3>
             <p class="info">{{ featured.funcao }} <span>&bull;</span> <em class="date">{{ featured.ano }}</em></p>
 
-            <p>
-              {{ featured.descricao }}
-            </p>
+            <p v-html="featured.descricao"></p>
 
           </div>
 
@@ -76,12 +81,24 @@
 
           <div class="twelve columns">
 
-            <h3>{{ project.nome }}</h3>
+            <h3>{{ project.nome }}
+              <small v-if="project.url !== null">
+                <a :href="project.url" target="_blank" :title="project.nome">
+                  <em class="fa fa-fw fa-external-link"></em>
+                </a>
+              </small>
+            </h3>
             <p class="info">{{ project.funcao }} <span>&bull;</span> <em class="date">{{ project.ano }}</em></p>
 
-            <p>
-              {{ project.descricao }}
-            </p>
+            <p v-html="project.descricao"></p>
+
+            <ul>
+              <li v-for="job in project.jobs">
+                <a :href="job.url" target="_blank" :title="job.nome">{{ job.nome }}</a>
+                <br>
+                <small v-if="job.comment !== null">{{job.comment}}</small>
+              </li>
+            </ul>
 
           </div>
 

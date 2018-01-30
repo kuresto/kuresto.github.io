@@ -1,4 +1,19 @@
-quote: "Teste"
-origin: ABC
+quote: |
+  We are creating a world that all may enter without privilege or prejudice accorded by race, economic power, military force, or station of birth.
+origin: A Declaration of the Independence of Cyberspace, John Perry Barlow, 1996
 conteudo: |
-  HAHAHAAH
+  Quando iniciei o projeto deste site, a única certeza que tinha era que eu gostaria de contar um pouco sobre como
+  eu vejo meu trabalho como desenvolvedor. Acredito este momento crítico onde atingimos uma quantidade astronomica de
+  ferramentas devemos dar alguns passos atrás e revisitar processos nos perguntando como, com o conhecimento de hoje,
+  podemos melhora-los.
+  <br>
+  <br>
+  Acredito que o primeiro "processo" a ser revisitado é a influência do ser humano no desenvolvimento de aplicações:
+  A rápida evolução da tecnologia no último século basicamente colocou nós programadores numa maratona na qual estavamos
+  sempre em segundo. Acabamos por esquecer que toda e qualquer aplicação vem da percepção do ser humano do mundo.
+  Processos de abstração viraram gincanas de busca a ferramentas e conceitos são deixados de lado por soluções práticas.
+  <br>
+  <br>
+  Ouvindo e ensinando o usuário seja por conversa, design, conteúdo (etc.), conseguiremos vencer barreiras que nem
+  imaginavamos existir. E conseguiremos melhorar estes processos que damos por otimizados em ambas pontas (desenvolvedor
+  e usuário), afinal, hoje em dia ninguém mais sabe o que há na pasta node_modules de fato.
