@@ -67,7 +67,8 @@
     conectacompras:
       nome: Conecta Compras
       url: https://www.conectacompras.com.br
-      comment: Refatoração e Otimização do Site existente, adição de novos meios de pagamento, correções de segurança.
+      comment: Refatoração e Otimização do Site existente, adição de novos meios de pagamento, correções de segurança e
+      Api.
 - projeto:
   nome: Freelancer e Outros
   ano: 2010 - 2018
