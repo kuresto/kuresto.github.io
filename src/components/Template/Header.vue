@@ -10,9 +10,9 @@
           <span>Olá! Eu sou</span> <br>
           Nilton Teixeira.
         </h1>
-        <h3>Eu sou um <span>desenvolvedor full-stack</span> estacionado em Ribeirão Preto/SP.
-          Procuro <span>desenvolver para humanos</span> através do desapego a crenças engessadas, colocando
-          <span>conceitos acima da ferramentas</span>. <br>
+        <h3>Eu sou um <span>desenvolvedor full-stack</span> em Ribeirão Preto/SP. <br>
+          Esquecemos que o foco da tecnologia não são ferramentas e publicidade.<br> O <span>ser humano</span> deve
+          estar no centro do desenvolvimento<br> e os <span>conceitos acima das ferramentas</span>. <br>
           Ficou curioso? <a class="smoothscroll" href="#sobre-mim">Me conheça melhor logo abaixo!</a>
         </h3>
         <hr/>

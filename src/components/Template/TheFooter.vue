@@ -20,7 +20,7 @@
         </ul>
 
         <ul class="copyright">
-          <li>2018 Developed <span class="grey">with</span>out coffee</li>
+          <li>2018 Developed by <span class="grey">a human</span></li>
           <li>Based on <a href="https://www.styleshout.com/free-templates/ceevee/" target="_blank"
                           title="CeeVee Template">CeeVee</a>
             by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>

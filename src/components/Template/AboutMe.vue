@@ -22,21 +22,21 @@
         </blockquote>
 
         <p>
-          Começou com um terminal em BASIC. Eu tinha (tenho) um computador/vídeo game chamado Magic
-          Computer, mas aquele um terminal roxo era que fazia coisas
-          que eu não entendia. Fascinado, lembro de ter lido no manual (que acho que não era do aparelho)
-          um programa que escrevia uma frase em inglês infinitas vezes: Hello world!
+          Existe um mito que a tecnologia é para ser utilizada não entendida. Utilizamos várias todos os dias sem
+          entender o porque existem. O porque de certas decisões passam despercebido. Falamos em ambiente de trabalho
+          de visão holística, mas não entendemos como criar esta visão.
         </p>
 
         <p>
-          Somente 15 anos depois aprendi a cancelar a execução do mesmo.
+          Antes de tudo para que se haja esta "visão" devemos empoderar o cliente e o usuário, e para empodera-lo
+          temos que simplificar nossos pensamentos viciados em pensar como um computador responderá aos nossos comandos,
+          e passar a pensar como nós pessoas entedemos a natureza e como isso influenciou a criação desta máquina.
         </p>
 
         <p>
-          Mas somente comecei a me interessar pela área de verdade mais tarde. Lembro dos choques que tomei com meu
-          computador, tentativas de criar sites no Geocities da Yahoo!, caminhar pelo MSN Groups, não entender o que
-          o Front Page tava fazendo, procurando como programar. E, lógico, o mais importante para mim era hackear meus
-          jogos! O que começou como uma trapaça, virou um hobbie, e anos depois este hobbie virou filosofia.
+          Meu foco como <strong>desenvolvedor</strong> é exatamente este! Não existe tecnologia sem
+          <strong>descoberta</strong> e ela não continua existindo sem <strong>entendimento</strong>. Conhecimento
+          deve ser compartilhado e ensinado, facilitando nosso trabalho e tornando nosso futuro um pouco menos escuro.
         </p>
 
         <div class="row">
