@@ -57,7 +57,7 @@
           <div class="columns download">
             <h2>Posso fazer umas anotações?</h2>
             <p>
-              <a href="#" class="button">
+              <a href="/static/cv.pdf" target="_blank" title="Baixe meu currículo" class="button">
                 <i class="fa fa-download"></i>Claro! Baixe meu CV
               </a>
             </p>
