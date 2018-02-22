@@ -20,11 +20,6 @@
                 <div class="overlay">
                   <div class="portfolio-item-meta">
                     <h5>{{ skill.titulo }}</h5>
-                    <p>
-                      <span v-for="n in skill.rank">
-                        <em class="fa fa-star" :title="n"></em>
-                      </span>
-                    </p>
                     <p>{{ skill.descricao_curta }}</p>
                   </div>
                 </div>
