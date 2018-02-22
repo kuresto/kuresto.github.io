@@ -93,8 +93,13 @@ export default {
       let elem = document.querySelector('a[href="' + id() + '"]')
       let elems = document.querySelector('nav li.current')
 
-      elems.classList.remove('current')
-      elem.parentElement.className += ' current'
+      if (elems !== null) {
+        elems.classList.remove('current')
+      }
+
+      if (elem !== null) {
+        elem.parentElement.className += ' current'
+      }
     }, false)
 
     function getY (query) {
